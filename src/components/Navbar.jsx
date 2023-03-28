@@ -10,7 +10,7 @@ const Navbar = () => {
     <nav
       className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
     >
-      <div className="w-full flex justify-content items-center max-w-7xl mx-auto">
+      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
           to="/"
           className="flex items-center gap-2"
@@ -20,8 +20,30 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-       <p className="text-white text-[18px] font-bold cursor-pointer">Edona Elshani</p>
+          <p className="text-white text-[18px] font-bold cursor-pointer">
+            Edona Elshani
+          </p>
         </Link>
+        <ul className="list-none hidden sm:flex flex-row gap-10 text-white">
+          {navLinks.map((link) => (
+            <li
+              key={link.id}
+              className={`${
+                active === link.title ? "text-white" : "text-secondary"
+              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              onClick={() => setActive(link.title)}
+            >
+              <a href={`#${link.id}`}>{link.title}</a>
+            </li>
+          ))}
+        </ul>
+        <div className="sn:hidden flex flex-1 justify-end items-center">
+          <img
+            src={menu}
+            alt="menu"
+            className="w-[28px] h-[28px] object-contain cursor-pointer"
+          />
+        </div>
       </div>
     </nav>
   );
