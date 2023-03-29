@@ -25,7 +25,6 @@ const Hero = () => {
           </div>
         </div>
         <ComputersCanvas />
-        {/* 46:18 */}
       </section>
     </>
   );
