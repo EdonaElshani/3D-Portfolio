@@ -1,7 +1,6 @@
 import {
   mobile,
   backend,
-  creator,
   web,
   javascript,
   typescript,
@@ -10,17 +9,16 @@ import {
   reactjs,
   redux,
   tailwind,
-  nodejs,
-  mongodb,
   git,
-  figma,
-  docker,
   PBC,
   bpost,
   carrent,
   jobit,
   tripguide,
   threejs,
+  Csharp,
+  NetCore,
+  ReactNative,
 } from "../assets";
 
 export const navLinks = [
@@ -51,20 +49,16 @@ const services = [
     title: "Web application development",
     icon: backend,
   },
-  // {
-  //   title: "Content Creator",
-  //   icon: creator,
-  // },
 ];
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
+    name: "C#",
+    icon: Csharp,
   },
   {
-    name: "CSS 3",
-    icon: css,
+    name: ".NET Core",
+    icon: NetCore,
   },
   {
     name: "JavaScript",
@@ -83,20 +77,20 @@ const technologies = [
     icon: redux,
   },
   {
+    name: "Three JS",
+    icon: threejs,
+  },
+  {
+    name: "CSS 3",
+    icon: css,
+  },
+  {
     name: "Tailwind CSS",
     icon: tailwind,
   },
   {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
+    name: "HTML 5",
+    icon: html,
   },
   {
     name: "git",

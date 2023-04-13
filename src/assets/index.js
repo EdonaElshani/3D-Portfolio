@@ -20,6 +20,9 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import Csharp from "./tech/Csharp.png";
+import NetCore from "./tech/NetCore.png";
+import ReactNative from "./tech/ReactNative.png";
 
 import PBC from "./company/PBC.jpg";
 import bpost from "./company/bpost.jpg";
@@ -55,4 +58,7 @@ export {
   carrent,
   jobit,
   tripguide,
+  Csharp,
+  NetCore,
+  ReactNative,
 };
